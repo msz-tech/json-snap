@@ -1,5 +1,6 @@
 import { formatJSON } from './utils.js';
 
+let useMinify = false;
 function formatPageJSON() {
   const pre = document.querySelector('pre');
   if (!pre) return;

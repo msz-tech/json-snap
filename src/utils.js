@@ -6,3 +6,11 @@ export function formatJSON(jsonString) {
     return jsonString; 
   }
 }
+export function minifyJSON(jsonString) {
+  try {
+    const obj = JSON.parse(jsonString);
+    return JSON.stringify(obj); 
+  } catch {
+    return jsonString;
+  }
+}
