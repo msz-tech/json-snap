@@ -17,6 +17,7 @@
     {
       "matches": ["<all_urls>"],
       "js": ["src/content.js"],
+      "css": ["src/styles/theme.css"],
       "run_at": "document_idle"
     }
   ],
