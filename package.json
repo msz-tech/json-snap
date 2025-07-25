@@ -1,0 +1,14 @@
+{
+  "name": "json-snap",
+  "version": "1.0.0",
+  "description": "JSON Snap - A lightweight Chrome extension for JSON formatting and theming (beautify, minify, dark mode).",
+  "author": "Mehdi Salim Zayani",
+  "license": "MIT",
+  "main": "src/content.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
