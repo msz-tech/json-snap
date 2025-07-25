@@ -1,0 +1,50 @@
+/* Background & text */
+body {
+  background-color: #1e1e2f;      /* Soft dark blue background */
+  color: #c8c8ff;                 /* Light blue text for good contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin: 1em;
+}
+
+/* Containers (each tree node) */
+div {
+  user-select: text;
+  color: #c8c8ff; /* Ensure all text inside div inherits this color */
+}
+
+/* Buttons and toggles */
+button {
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #ff79c6;            /* Bright pink for toggle buttons */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #50fa7b;            /* Neon green on hover */
+}
+
+/* Labels and values */
+span {
+  color: #f8f8f2;            /* Off-white color for labels/values */
+}
+
+/* Vertical tree line */
+div > div {
+  border-left: 2px solid #6272a4; /* Visible vertical line, bluish purple */
+  padding-left: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* Differentiate keys and values */
+span:first-child {
+  font-weight: 700;
+  color: #8be9fd;   /* Light cyan for keys */
+}
+
+span:last-child {
+  color: #f1fa8c;   /* Light yellow for values */
+}
