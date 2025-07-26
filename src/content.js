@@ -61,7 +61,6 @@ function createCollapsibleJSON(container, json, depth = 0, maxOpenDepth = 0) {
     return;
   }
 
-  const isArray = Array.isArray(json);
   const wrapper = document.createElement('div');
   wrapper.style.marginLeft = '1em';
 
@@ -133,8 +132,11 @@ function formatPageJSON() {
     try {
       const jsonObj = JSON.parse(raw);
       pre.textContent = '';
+
       const container = document.createElement('div');
+      container.id = 'json-snap-container';
       pre.appendChild(container);
+
       createCollapsibleJSON(container, jsonObj, 0, 0); // All nodes collapsed
     } catch {
       pre.textContent = formatJSON(raw); // fallback
